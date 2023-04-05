@@ -1,5 +1,6 @@
 from flashcard import flashcard
 from deck import deck
+from box import box
 
 def menu1() -> int:
     opcao = int(input("\nDeseja: \n"
@@ -26,6 +27,10 @@ def showList(list):
 
 myDeck = deck()
 
+box1 = box(1)
+box2 = box(2)
+box3 = box(3)
+
 while True:    
 
     opcao = menu1()
@@ -38,7 +43,7 @@ while True:
 
             if op == 1:
                 newFlashcard = flashcard(pergunta = input("\nDigite a pergunta\n"), resposta = input("Digite a resposta\n"))
-                myDeck.includeFlashcard(newFlashcard)
+                myDeck.addFlashcard(newFlashcard)
                 flashcard.cont += 1
 
             elif op == 2:

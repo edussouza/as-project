@@ -7,11 +7,11 @@ class deck:
     def __init__(self):
         pass
 
-    def includeFlashcard(self, flashcard):
+    def addFlashcard(self, flashcard):
         deck.list.append(flashcard)
 
     def removeFlashcard(self, index):
         deck.list.pop(index-1)
 
     def showDeck(self):
-        print(deck.list)        
+        print(deck.list)

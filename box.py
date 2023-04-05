@@ -4,11 +4,12 @@ class box:
 
     def __init__(self, level):
         self.level = level
-        self.flashcards = []
+        self.list = []
 
-    def includeFlashcard(self, flashcard):
-        self.flashcards.append(flashcard)
+    def addFlashcard(self, flashcard):
+        self.list.append(flashcard)
 
     def removeFlashcard(self, flashcard):
-        self.flashcards.pop(flashcard)    
-    
+        self.list.pop(flashcard)    
+
+    # def moveFlashcard(self, flashcard, correct):
